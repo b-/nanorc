@@ -1,6 +1,9 @@
 #!/bin/sh
 
-wget -O /tmp/nanorc.zip https://github.com/scopatz/nanorc/archive/master.zip
+#wget -O /tmp/nanorc.zip https://github.com/scopatz/nanorc/archive/master.zip
+# use curl instead of wget for better OS X compatibility
+curl -LO /tmp/nanorc.zip https://github.com/b-/nanorc/archive/master.zip
+
 if [ ! -d ~/.nano/ ]
 then
     mkdir ~/.nano/
